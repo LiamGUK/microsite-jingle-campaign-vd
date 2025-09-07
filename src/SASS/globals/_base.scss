@@ -1,7 +1,7 @@
 // Flag icons package
-@use '../../../node_modules/flag-icons/sass/flag-icons' with (
+@use '/node_modules/flag-icons/sass/flag-icons' with (
   // Override path to flags directory
-  $flag-icons-path: '../../../node_modules/flag-icons/flags',
+  $flag-icons-path: '/node_modules/flag-icons/flags',
 
   // Include only specific country flags
   $flag-icons-included-countries: ('nl', 'es', 'gb', 'be', 'fr', 'ie', 'it')
