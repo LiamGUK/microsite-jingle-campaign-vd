@@ -1,0 +1,41 @@
+.wFormContainer {
+  padding: 0 5rem;
+}
+
+.primaryAction {
+  display: block !important;
+  margin: auto;
+  width: 60%;
+}
+
+.oneField {
+  margin-bottom: 20px;
+}
+
+label span {
+  font-size: 2rem;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid #000f42;
+  background-color: transparent;
+  width: 90%;
+}
+
+input {
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #2db76e;
+  }
+
+  &[placeholder] {
+    font-size: 1.7rem;
+  }
+}
+
+.errMsg {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff0000;
+}

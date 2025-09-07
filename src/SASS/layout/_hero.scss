@@ -1,0 +1,34 @@
+.intro {
+  &-wrapper__main {
+    display: table;
+    height: 65vh;
+    margin-top: 15rem;
+  }
+
+  &-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &-text__container {
+    max-width: 52rem;
+  }
+
+  &-txt {
+    font-weight: 700;
+    color: var(--color-blue-dark-1);
+    font-size: 2.4rem;
+  }
+}
+
+.left-block {
+  animation: flow-in-left 1.7s cubic-bezier(0.78, 0, 0.42, 1.41);
+}
+
+.right-block {
+  animation: flow-in-right 1.7s cubic-bezier(0.78, 0, 0.42, 1.41);
+}
+
+.fade-block {
+  animation: fade-in 3.3s cubic-bezier(0.78, 0, 0.42, 1.41);
+}

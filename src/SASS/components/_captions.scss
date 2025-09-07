@@ -1,0 +1,17 @@
+.caption {
+  &-block {
+    font-size: 2.1rem;
+    position: relative;
+    bottom: 2rem;
+    margin: auto;
+    background-color: #fff;
+    max-width: 85%;
+    padding: 2rem 3rem;
+    border-radius: var(--radius-curve);
+    box-shadow: var(--shadow-light-1);
+
+    & h2 {
+      font-size: 3rem;
+    }
+  }
+}

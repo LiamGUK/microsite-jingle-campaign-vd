@@ -1,0 +1,39 @@
+// .u-center-old { margin: 0 auto; }
+
+// .u-section--divide { margin-bottom: 10rem; }
+
+// .u-section--top { margin-top: var(--margin-section-top); }
+
+// /*.u-text-center { text-align: center; }*/
+
+// .u-wht-space { white-space: nowrap; }
+
+// .u-central-contain {
+//     width: 63%;
+//     margin: auto;
+// }
+
+.u {
+  &-center-old {
+    margin: 0 auto;
+  }
+
+  &-wht-space {
+    white-space: nowrap;
+  }
+
+  &-central-contain {
+    width: 63%;
+    margin: auto;
+  }
+
+  &-section {
+    &--divide {
+      margin-bottom: 10rem;
+    }
+
+    &--top {
+      margin-top: var(--margin-section-top);
+    }
+  }
+}

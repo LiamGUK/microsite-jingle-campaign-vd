@@ -1,0 +1,76 @@
+#challenge-info {
+  padding: 1rem 0;
+}
+
+.challenge-wrapper {
+  color: #fff;
+  background-color: #003dab;
+}
+
+.img-wrapper {
+  max-width: 52rem;
+}
+
+.photo-img {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.photo-img--one,
+.photo-img--two {
+  border-radius: var(--radius-curve);
+}
+
+.txt {
+  &-box {
+    padding: 4.9rem 5rem 4rem;
+  }
+
+  &-wrapper {
+    max-width: 45rem;
+    margin: auto;
+    font-size: 2.3rem;
+  }
+}
+
+.prize-wrapper {
+  color: var(--color-blue-dark-1);
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.terms {
+  &-main {
+    margin-top: calc(8rem * 2);
+    margin-bottom: calc(8rem * 2);
+    padding: 0 4rem;
+
+    &__heading {
+      font-size: 3.4rem;
+      margin-bottom: 5rem;
+    }
+
+    & h2 {
+      font-size: 2.8rem;
+      margin-bottom: 4rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-list {
+    margin-bottom: 4rem;
+
+    & li {
+      font-size: 1.5rem;
+      margin-bottom: 2rem !important;
+    }
+
+    & span {
+      display: block;
+      margin: 8px 0 0 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.language-selector {
+  &__label {
+    cursor: pointer;
+  }
+
+  // try using hidden attribute on input element
+  &__input {
+    display: none;
+
+    &:checked ~ .navigation-links {
+      transform: translateY(4rem);
+      height: 11rem;
+    }
+
+    &:checked ~ .navigation-links .navigation-links__main {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:checked + .language-selector__label .language-selector__icon {
+      transform: rotateX(180deg);
+    }
+
+    &:checked ~ .navigation-links .navigation-links__main a {
+      transform: scale(1);
+    }
+  }
+
+  &__main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f9;
+  }
+
+  &__icon {
+    background-image: url('/icons/arrow-language-element.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    transition: transform 0.9s ease;
+  }
+}
+
+.input-language {
+  &__icon {
+    max-width: 5rem;
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+
+  &__selector {
+    font-size: 1.8rem;
+  }
+}

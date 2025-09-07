@@ -1,0 +1,35 @@
+h1 {
+  font-size: 5.4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+strong {
+  font-weight: 800;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.heading-txt {
+  font-family: 'Merriweather', Arial, sans-serif;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,42 @@
+.dropdown {
+  &-toggle {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &-icon {
+    display: inherit;
+    width: 100%;
+    list-style: none;
+
+    & img {
+      margin-right: 8px;
+    }
+
+    &__main {
+      display: inline-flex;
+    }
+
+    &__img {
+      height: auto;
+      max-width: 3.5rem;
+      margin: auto 0.8rem auto 0;
+    }
+  }
+
+  &-flag__wrapper {
+    max-width: 3rem;
+    margin-right: 0.9rem;
+  }
+
+  &-menu.show {
+    display: block;
+    width: 15rem;
+  }
+
+  &-item {
+    font-size: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}

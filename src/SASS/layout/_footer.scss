@@ -1,0 +1,57 @@
+.footer {
+  &-container__top {
+    background-color: #f7f7f9;
+    padding: 2rem 4rem;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-around;
+
+    & > *:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &__link-item,
+    .dropdown-icon__country {
+      display: block;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &-container__bottom {
+    background-color: #fff;
+    padding: 5rem 6rem;
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__links-one {
+      margin-right: 40rem;
+    }
+
+    &__links-two {
+      text-align: right;
+    }
+
+    &__vd-icon {
+      max-width: 25rem;
+    }
+  }
+
+  &-img {
+    &__logo {
+      aspect-ratio: auto;
+    }
+  }
+}
+
+.copy {
+  font-size: 1.5rem;
+  color: #666f8d;
+}

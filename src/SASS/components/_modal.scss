@@ -1,0 +1,29 @@
+.confirm-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%) scale(0.9);
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  width: 80%;
+  padding: 2rem 4rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+  &__close {
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    & span {
+      cursor: pointer;
+    }
+  }
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,103 @@
+// Flag icons package
+@use '../../../node_modules/flag-icons/sass/flag-icons' with (
+  // Override path to flags directory
+  $flag-icons-path: '../../../node_modules/flag-icons/flags',
+
+  // Include only specific country flags
+  $flag-icons-included-countries: ('nl', 'es', 'gb', 'be', 'fr', 'ie', 'it')
+);
+
+:root {
+  --color-primary: #fbf3f3;
+  --color-secondary: #ffffe4;
+  --color-grey-light-1: #f9f9f9;
+  --color-grey-light-2: #f7f7f9;
+  --color-txt-primary: #000f42;
+  --color-blue-dark-1: #003dab;
+  --color-blue-dark-2: #002565;
+  --color-blue-dark-3: #0053e0;
+
+  --margin-section: 10rem;
+  --margin-section-top: -3rem;
+  --padding-indent: 5rem 6rem;
+  --radius-curve: 20px;
+  --shadow-light-1: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.09);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus,
+*:focus-visible,
+*:focus-within,
+*:focus:not(:focus-visible) {
+  outline: 2px solid transparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: var(--color-txt-primary);
+  background-color: #fbf3f3;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+header {
+  margin-bottom: 10rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

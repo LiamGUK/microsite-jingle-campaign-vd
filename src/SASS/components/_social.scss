@@ -1,0 +1,18 @@
+.social {
+  &-media li {
+    display: inline-block;
+  }
+
+  &-icon {
+    max-width: 2.4rem;
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease-out;
+  }
+}
+
+@media not all and (hover: none) {
+  .social-icon:hover,
+  .navigation-links__main a:hover {
+    transform: scale(1.2);
+  }
+}
